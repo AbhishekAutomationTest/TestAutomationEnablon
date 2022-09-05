@@ -1,6 +1,6 @@
 # Test Automation Assignment Enablon
 
-### Application Understanding (for self Understanding):
+### Application Requirements (for self Understanding):
 1. Todo App allows user to perform below actions:
    a. User can add new tasks
    b. User can modify already added tasks by double-click on it
@@ -40,12 +40,14 @@
 
 ## Testing Framework & Patterns:
 ### 1. TestNG framework:
+#### Why?
 1. Good to scale while executing cross-browser testing across multiple devices, browsers, and their versions.
 2. Active community for support & future updates.
 3. In-built reporting solutions 
 4. Good annotation support making it easy to organize & maintain testcases with good readability.
 
 ### 2. Page Object Model Pattern with Page Factory:
+#### Why?
 1. user interactions are abstracted from the core test implementation, making it easy to adapt to the changing project requirements.
 2. Since Object repository is seperated from testcases, same can be reused for different purposes & different tools. e.g. Functional test using testNG, Acceptance Testusing Jbehave/Cucmber etc.
 3. Page Factory further simplifies locating and initializing the web element variables.
@@ -61,3 +63,14 @@ Note: Each Test is configured with total retry count = 3. If test is passed one 
 2. Since default test reports doesn't provide the cleanup for retry tests, an additional MyTestListenerAdapter is implemented to clean up the reports for retry counts.
 
 ![image](https://user-images.githubusercontent.com/42365090/188405730-a5eebf68-14ea-4506-8d8b-c6a261ead40a.png)
+
+
+## Pre-requisite to run Testcases: 
+1. Make sure Chrome Browser version is **104.0.5112.101**
+2. Make sure Firefox is installed with any latest version
+2. Make sure you have Run Configuration with Below settings: 
+1. OutputDirectory --> This is the path where testreport will be generated with name **emailable-report.html**
+2. Add a Listeners as **org.testng.reporters.EmailableReporter**
+<img width="991" alt="image" src="https://user-images.githubusercontent.com/42365090/188408121-fbe54d2b-c82a-4a59-b114-db1882d602c7.png">
+
+3. Now, Click Run with your TestNG run configuration!
