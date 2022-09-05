@@ -40,15 +40,15 @@
 
 ## Testing Framework & Patterns:
 ### 1. TestNG framework:
-a. Good to scale while executing cross-browser testing across multiple devices, browsers, and their versions.
-b. Active community for support & future updates.
-c. In-built reporting solutions 
-d. Good annotation support making it easy to organize & maintain testcases with good readability.
+1. Good to scale while executing cross-browser testing across multiple devices, browsers, and their versions.
+2. Active community for support & future updates.
+3. In-built reporting solutions 
+4. Good annotation support making it easy to organize & maintain testcases with good readability.
 
 ### 2. Page Object Model Pattern with Page Factory:
-a. user interactions are abstracted from the core test implementation, making it easy to adapt to the changing project requirements.
-b. Since Object repository is seperated from testcases, same can be reused for different purposes & different tools. e.g. Functional test using testNG, Acceptance Testusing Jbehave/Cucmber etc.
-c. Page Factory further simplifies locating and initializing the web element variables.
+1. user interactions are abstracted from the core test implementation, making it easy to adapt to the changing project requirements.
+2. Since Object repository is seperated from testcases, same can be reused for different purposes & different tools. e.g. Functional test using testNG, Acceptance Testusing Jbehave/Cucmber etc.
+3. Page Factory further simplifies locating and initializing the web element variables.
 
 ## Test Suites Structure:
 
