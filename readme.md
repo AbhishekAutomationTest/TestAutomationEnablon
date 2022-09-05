@@ -1,7 +1,6 @@
-#Test Automation Assignment Enablon
+# Test Automation Assignment Enablon
 
-Application Requirements:
-
+### Application Understanding (for self Understanding):
 1. Todo App allows user to perform below actions:
    a. User can add new tasks
    b. User can modify already added tasks by double-click on it
@@ -21,3 +20,44 @@ Application Requirements:
 5. Minimum length of task name should be atleast 1 character. (e.g. If Existing task is edited with empty value, it should get removed from the list.)
 6. Task list is locally stored & should not be persisted after clearing from local storage.
 7. Newly added task should appear at the end of the list & list order can not be altered.
+
+
+## Functional Test Scenarios:
+
+### Positive:
+1. verify user can add view edit & delete the task
+2. verify user can see the correct count of left items after add or delete the task
+3. verify user can mark multiple tasks as completed or not-completed & left-items count are correctly updated
+4. verify user can clear all completed tasks from the list
+5. verify user should be allowed to add task with duplicate names
+6. verify task data is persisted across multiple tabs in same browser
+
+### Negative: ###
+1. verify user can not add a task with empty task name
+2. Verify when existing task is updated with empty name, it gets deleted automatically
+3. verify task list is not persisted after clearing local storage
+4. verify not-completed tasks should not be removed when click clear-completed button
+
+## Testing Framework & Patterns:
+### 1. TestNG framework:
+a. Good to scale while executing cross-browser testing across multiple devices, browsers, and their versions.
+b. Active community for support & future updates.
+c. In-built reporting solutions 
+d. Good annotation support making it easy to organize & maintain testcases with good readability.
+
+### 2. Page Object Model Pattern with Page Factory:
+a. user interactions are abstracted from the core test implementation, making it easy to adapt to the changing project requirements.
+b. Since Object repository is seperated from testcases, same can be reused for different purposes & different tools. e.g. Functional test using testNG, Acceptance Testusing Jbehave/Cucmber etc.
+c. Page Factory further simplifies locating and initializing the web element variables.
+
+## Test Suites Structure:
+
+![image](https://user-images.githubusercontent.com/42365090/188394203-c1ac19c9-0300-4f95-b726-8698ee6ff98e.png)
+
+Note: Each Test is configured with total retry count = 3. If test is passed one out of 3 times, It will be marked as Passed.
+
+## Testing Reports:
+1. TestNG reports are used for reporting which generates a report in the root folder with name 'emailable-report.html'
+2. Since default test reports doesn't provide the cleanup for retry tests, an additional MyTestListenerAdapter is implemented to clean up the reports for retry counts.
+
+![image](https://user-images.githubusercontent.com/42365090/188405730-a5eebf68-14ea-4506-8d8b-c6a261ead40a.png)
