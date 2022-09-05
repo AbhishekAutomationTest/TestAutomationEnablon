@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
-<suite name="Functional" verbose="1" >
+<suite name="Functional Suite" verbose="1" >
     <listeners>
         <listener class-name="com.learning.util.AnnotationTransformer"/>
         <listener class-name="com.learning.util.MyTestListenerAdapter"/>
@@ -8,8 +8,8 @@
     <test name="Chrome Browser Test" >
         <parameter name="browser" value="chrome" />
         <classes>
-            <class name="com.learning.website.test.TodoListPositiveScenarios" />
-            <class name="com.learning.website.test.TodoListNegativeScenarios" />
+             <class name="com.learning.website.test.TodoListPositiveScenarios" />
+             <class name="com.learning.website.test.TodoListNegativeScenarios" />
         </classes>
     </test>
     <test name="Firefox Browser Test" >

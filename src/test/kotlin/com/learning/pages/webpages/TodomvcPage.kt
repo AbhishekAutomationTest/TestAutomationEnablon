@@ -157,5 +157,14 @@ class TodomvcPage(private val driver: WebDriver) {
         wait.until(ExpectedConditions.visibilityOf(clearCompletedButton))
         clearCompletedButton!!.click()
     }
+
+    fun expectTaskIsPresentInList(taskName: String) {
+        for (label in listItemLabels!!) {
+            if (label.text == taskName){
+                return
+            }
+        }
+        Assert.fail()
+    }
 }
 
