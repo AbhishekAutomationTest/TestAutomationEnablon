@@ -74,5 +74,5 @@ Note: Each Test is configured with total retry count = 3. If test is passed one 
 <img width="991" alt="image" src="https://user-images.githubusercontent.com/42365090/188408121-fbe54d2b-c82a-4a59-b114-db1882d602c7.png">
 
 3. Now, Click Run with your TestNG run configuration. 
-You can also run by right-click on testng.xml file & select 'Run <configuration Name>'. e.g. Run 'TestSuite' 
+You can also run by right-click on testng.xml file & select 'Run <configuration name>'  e.g. Run 'TestSuite' 
 <img width="512" alt="image" src="https://user-images.githubusercontent.com/42365090/188409176-9708ceae-362d-4588-a151-b89cae728ced.png">
