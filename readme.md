@@ -60,7 +60,8 @@ Note: Each Test is configured with total retry count = 3. Test will be considere
 
 ## Testing Reports:
 1. TestNG emailableReporter Listerners are used for reporting which generates a test report in the root folder with name **'emailable-report.html'**
-2. Since default test reports doesn't provide the cleanup for retry tests, an additional **MyTestListenerAdapter.class** is implemented to clean up the reports for retry counts.
+2. Since default test reports doesn't provide the cleanup for retry tests, an additional **MyTestListenerAdapter.class** is implemented to clean up the reports for retry counts. 
+3. To analyze the failed test on runtime & enable retry, **RetryAnalyzer** & **AnnotationTransformer** listener is implemented.
 
 ![image](https://user-images.githubusercontent.com/42365090/188405730-a5eebf68-14ea-4506-8d8b-c6a261ead40a.png)
 
