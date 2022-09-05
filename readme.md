@@ -56,11 +56,11 @@
 
 ![image](https://user-images.githubusercontent.com/42365090/188407176-5095f8b3-9d17-4fb0-a0f4-89af4efc376d.png)
 
-Note: Each Test is configured with total retry count = 3. If test is passed one out of 3 times, It will be marked as Passed.
+Note: Each Test is configured with total retry count = 3. Test will be considered as failed only if it fails all 3 times.
 
 ## Testing Reports:
-1. TestNG reports are used for reporting which generates a report in the root folder with name 'emailable-report.html'
-2. Since default test reports doesn't provide the cleanup for retry tests, an additional MyTestListenerAdapter is implemented to clean up the reports for retry counts.
+1. TestNG reports are used for reporting which generates a report in the root folder with name **'emailable-report.html'**
+2. Since default test reports doesn't provide the cleanup for retry tests, an additional **MyTestListenerAdapter.class** is implemented to clean up the reports for retry counts.
 
 ![image](https://user-images.githubusercontent.com/42365090/188405730-a5eebf68-14ea-4506-8d8b-c6a261ead40a.png)
 
