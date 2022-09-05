@@ -17,7 +17,7 @@
 
 3. Tasks with duplicate names are allowed to be added
 4. Task name can include any of the character including special characters, numerical & alphabets of any language.
-5. Minimum length of task name should be atleast 1 character. (e.g. If Existing task is edited with empty value, it should get removed from the list.)
+5. Task name can not be empty spaces. Minimum length of task name should be atleast 1 character. (e.g. If Existing task is edited with empty value or blank spaces, it should get removed from the list.)
 6. Task list is locally stored & should not be persisted after clearing from local storage.
 7. Newly added task should appear at the end of the list & list order can not be altered.
 
