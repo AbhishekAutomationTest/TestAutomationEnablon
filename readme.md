@@ -29,8 +29,8 @@
 2. verify user can see the correct count of left items after add or delete the task
 3. verify user can mark multiple tasks as completed or not-completed & left-items count are correctly updated
 4. verify user can clear all completed tasks from the list
-5. verify user should be allowed to add task with duplicate names
-6. verify task data is persisted across multiple tabs in same browser
+5. verify user should be allowed to add task with duplicate names (not yet implemented)
+6. verify task data is persisted across multiple tabs in same browser (not yet implemented)
 
 ### Negative: ###
 1. verify user can not add a task with empty task name
