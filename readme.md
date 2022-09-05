@@ -54,7 +54,7 @@
 
 ## Test Suites Structure:
 
-![image](https://user-images.githubusercontent.com/42365090/188407176-5095f8b3-9d17-4fb0-a0f4-89af4efc376d.png)
+![image](https://user-images.githubusercontent.com/42365090/188415087-5ad24f72-4cd5-4718-9b5e-a937bed6ab63.png)
 
 Note: Each Test is configured with total retry count = 3. Test will be considered as failed only if it fails all 3 times.
 
