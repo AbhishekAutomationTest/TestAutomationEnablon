@@ -52,7 +52,7 @@
 
 ## Test Suites Structure:
 
-![image](https://user-images.githubusercontent.com/42365090/188394203-c1ac19c9-0300-4f95-b726-8698ee6ff98e.png)
+![image](https://user-images.githubusercontent.com/42365090/188407176-5095f8b3-9d17-4fb0-a0f4-89af4efc376d.png)
 
 Note: Each Test is configured with total retry count = 3. If test is passed one out of 3 times, It will be marked as Passed.
 
